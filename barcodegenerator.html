@@ -21,7 +21,7 @@ body{
     <div class ="brcd Generator">
     <input type = "text" name = "text" id = "txt_enter" placeholder="type....">
     <button id ="btn_barcode">Generate Barcode</button><br></br>
-    <svg id = "barcode_box" style="height: 25px; width:100px"></svg>
+    <svg id = "barcode_box" style="height: 25px; width:100px; border:black;"></svg>
 </div>
 
     <script type="text/javascript">
@@ -29,7 +29,7 @@ body{
         var txt = document.getElementById("txt_enter").value;
       
 
-        JsBarcode("#barcode_box").init();
+        JsBarcode("#barcode_box", txt);
     });
 
 
